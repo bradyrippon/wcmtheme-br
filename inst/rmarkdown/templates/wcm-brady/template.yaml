@@ -1,0 +1,4 @@
+name: wcm-brady
+description: >
+   Minor adaptation to the [wcmtheme] package template
+create_dir: FALSE

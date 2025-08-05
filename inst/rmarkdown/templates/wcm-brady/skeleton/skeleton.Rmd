@@ -1,0 +1,40 @@
+---
+title: "Report Name"
+author: "Brady Rippon, MS"
+pi: "Investigator Name"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+footer_message: ""
+knit: (
+    function(inputFile, encoding) {
+      out_dir   <- here::here("reports");
+      title     <- "title";
+      sd        <- format(Sys.Date(), "%Y-%m-%d");
+      out_file  <- paste0("[ ", sd, " ] ", title, ".html");
+      rmarkdown::render(
+        inputFile,
+        encoding = encoding, 
+        output_file = file.path(out_dir, out_file)
+      ) 
+    }
+  )
+output: 
+  wcmtheme::wcm_html: 
+    toc: true
+    toc_float: true
+---
+
+```{r setup, include = F}
+
+knitr::opts_chunk$set(echo = F, message = F, warning = F, results = "asis")
+
+## load tools ----------
+
+# libraries
+source(here::here("code/admin/libs.R"))
+
+# code sources
+source(here::here("code/~"))
+
+```
+
+# Section 1
