@@ -1,16 +1,16 @@
-Package: wcmtheme.br
+Package: wcmthemeBR
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Custom Markdown Template
 Version: 0.1.0
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
-      role = c("aut", "cre")
+      "Brady", "Rippon",
+      email = "brr7014@med.cornell.edu",
+      role = "cre"
     )
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Description: Small adaptation to the [wcmthemes] package developed by
+	Nick Williams and Kat Hoffman
+License: Unlimited
 Encoding: UTF-8
 LazyData: true
